@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/sum"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:onClick="sendNumbers"
+        android:text="@string/sum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:text="@string/answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sum"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <EditText
+        android:id="@+id/firstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:ems="10"
+        android:hint="@string/firstNumber"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/secondNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <EditText
+        android:id="@+id/secondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="200dp"
+        android:ems="10"
+        android:hint="@string/secondNumber"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/answer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
